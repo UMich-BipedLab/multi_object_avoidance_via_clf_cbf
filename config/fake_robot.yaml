@@ -1,0 +1,15 @@
+fake_robot:
+
+  inekf_publish_rate: 300
+  receiving_rate: 10
+  time_interval: 0.05
+
+  map_frame: "odom"
+  planner_msg_topic: /planner/planner_commands
+
+  x: 0
+  y: 0
+  z: 0
+  roll: 0
+  pitch: 0
+  yaw: -135

@@ -1,0 +1,13 @@
+fake_map:
+
+  publish_rate: 2.0
+  map_id: 0
+  map_frame: "odom"
+
+  length_x: 50
+  length_y: 30
+  center_x: 0.0
+  center_y: 0.0
+  resolution: 0.1
+
+  add_nan_noise: false

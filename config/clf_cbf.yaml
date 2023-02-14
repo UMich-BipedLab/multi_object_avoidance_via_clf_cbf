@@ -1,0 +1,27 @@
+clf_cbf:
+  cbf_mode: 1
+
+  x_dim: 3
+  u_dim: 3
+
+  h1: 0.2
+  h2: 1.0
+  h3: 1.0
+  clf_rate: 0.2
+  cbf_rate: 0.4
+  slack_weight: 2
+  alpha: 5
+  beta: 4.5
+  gamma: 2
+  eps: 0.01
+  delta_dis: 0.3
+  switch_time: 5.0
+
+  max_ob: 10
+
+  k_r1: 1
+  k_r2: 5
+  k_delta1: 0.1
+  k_delta2: 10
+
+  epsilon: 0.0001

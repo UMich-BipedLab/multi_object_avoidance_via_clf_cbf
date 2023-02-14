@@ -1,0 +1,6 @@
+robot_param:
+  default_omega: 20
+  vx_upper_bound: 0.5
+  vy_upper_bound: 0.15
+  
+  step_time_interval: 0.4 # this is used for heading

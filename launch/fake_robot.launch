@@ -1,0 +1,5 @@
+<launch>
+  <node name="fake_robot" pkg="cbf_cassie_planning" type="cbf_fake_robot_publisher" output="screen">
+    <rosparam file="$(find cbf_cassie_planning)/config/fake_robot.yaml" command="load" />
+  </node>
+</launch>

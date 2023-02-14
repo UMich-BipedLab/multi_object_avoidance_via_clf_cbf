@@ -1,0 +1,6 @@
+<launch>
+  <node name="fake_map" pkg="cbf_cassie_planning" type="cbf_fake_map_publisher" output="screen">
+    <rosparam file="$(find cbf_cassie_planning)/config/fake_map.yaml" command="load" />
+    <rosparam file="$(find cbf_cassie_planning)/config/obstacle2.yaml" command="load" />
+  </node>
+</launch>

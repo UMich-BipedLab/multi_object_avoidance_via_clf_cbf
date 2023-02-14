@@ -1,0 +1,3 @@
+[submodule "matlab_simulation/matlab_utils"]
+	path = matlab_simulation/matlab_utils
+	url = git@github.com:UMich-BipedLab/matlab_utils.git

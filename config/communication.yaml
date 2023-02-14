@@ -1,0 +1,4 @@
+communication:
+  ip_to_send: "10.10.10.3"
+  port_to_send: "30000"
+  port_to_receive: "31000"

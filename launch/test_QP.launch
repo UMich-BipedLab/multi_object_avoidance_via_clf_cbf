@@ -1,0 +1,15 @@
+<launch>
+  <node name="test_qp" pkg="cbf_cassie_planning" type="cbf_test_qp" output="screen">
+    <rosparam file="$(find cbf_cassie_planning)/config/clf_cbf.yaml" command="load" />
+
+    <param name="robot_x" value="-15" />
+    <param name="robot_y" value="-15" />
+    <param name="robot_theta" value="0" />
+    <param name="target_x" value="0" />
+    <param name="target_y" value="0" />
+    <param name="obs_x" value="-6" />
+    <param name="obs_y" value="-1" />
+    <param name="obs_r" value="1" />
+
+  </node>
+</launch>

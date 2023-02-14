@@ -1,0 +1,21 @@
+<launch>
+  <node name="planner" pkg="cbf_cassie_planning" type="cbf_test_pipeline" output="screen">
+    <rosparam file="$(find cbf_cassie_planning)/config/clf_cbf.yaml" command="load" />
+    <rosparam file="$(find cbf_cassie_planning)/config/robot_param.yaml" command="load" />
+    <rosparam file="$(find cbf_cassie_planning)/config/communication.yaml" command="load" />
+    <rosparam file="$(find cbf_cassie_planning)/config/obstacle.yaml" command="load" />
+
+    <param name="multilayer_map_topic" value="/multilayer_map/local_map" /> <!-- /fake_map/elevation_map -->
+    <param name="inekf_topic" value="/cassie/inekf_state" /> <!-- /fake_robot/inekf  /cassie/inekf_state -->
+    <param name="map_frame" value="odom" />
+    <param name="reached_threshold" value="0.5" />
+    <param name="step_length" value="0.3" />
+    <param name="safe_distance" value="0.3" />
+    <param name="goal_distance" value="20.0" />
+    <param name="subgoal_update_rate" value="1" />
+    <param name="reactive_planner_rate" value="300" />
+    <param name="enlarge_scale" value="2" />
+    <param name="smooth_uref" value="false" />
+
+  </node>
+</launch>
